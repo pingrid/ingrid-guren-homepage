@@ -1,0 +1,29 @@
+.home {
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.header-font {
+  font-size: 3rem;
+}
+
+.birthday {
+  padding-top: 2rem;
+}
+
+.birthday-number {
+  color: blue;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 8rem;
+  margin: 0;
+}
+
+.birthday-button {
+  border: 1px solid blue;
+  background: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  margin-top: 2rem;
+}
