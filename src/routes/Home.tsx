@@ -20,7 +20,7 @@ class Home extends PureComponent<IProps, IState>{
         const { color } = this.props;
         const today = new Date();
         const birthday = new Date('1991-07-06');
-        birthday.setFullYear(today.getFullYear() + 1);
+        birthday.setFullYear(today.getFullYear());
 
         const numberOfDaysLeft = Math.ceil(Math.abs((birthday.getTime() - today.getTime()) / (24 * 60 * 60 * 1000)));
 
