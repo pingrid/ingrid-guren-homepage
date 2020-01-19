@@ -44,7 +44,17 @@
 	border-radius: 2rem;
 	vertical-align: middle;
 }
-
 .menu-items {
-	float: right;
+	display: none;
 }
+
+@media screen and (min-width: 642px) {
+	.menu-items {
+		display: inline-block;
+		float: right;
+	}
+	.mobile-menu {
+		display: none;
+	}
+}
+

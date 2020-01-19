@@ -1,5 +1,6 @@
 import React, {PureComponent } from 'react';
 import Confetti from 'react-confetti';
+import {getNumberOfDaysBetweenDates} from "../utils/date";
 
 interface IProps {
     color: string | 'blue';
@@ -18,11 +19,11 @@ class Home extends PureComponent<IProps, IState>{
     }
     render()  {
         const { color } = this.props;
+        const date = new Date();
+        date.setMonth(7);
+        date.setDate(6);
         const today = new Date();
-        const birthday = new Date('1991-07-06');
-        birthday.setFullYear(today.getFullYear());
-
-        const numberOfDaysLeft = Math.ceil(Math.abs((birthday.getTime() - today.getTime()) / (24 * 60 * 60 * 1000)));
+        const numberOfDaysLeft = getNumberOfDaysBetweenDates(date, today);
 
         const { showConfetti } = this.state;
         return (
