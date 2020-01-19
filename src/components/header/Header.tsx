@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
-import image from '../../resources/ingridguren.png';
+import image from '../../resources/ingridguren-small.jpg';
 
 interface IProps {
 	color: string;
