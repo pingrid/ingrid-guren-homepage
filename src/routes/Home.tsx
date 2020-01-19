@@ -19,11 +19,11 @@ class Home extends PureComponent<IProps, IState>{
     }
     render()  {
         const { color } = this.props;
-        const date = new Date();
-        date.setMonth(7);
-        date.setDate(6);
+        const birthday = new Date();
+        birthday.setMonth(6);
+        birthday.setDate(6);
         const today = new Date();
-        const numberOfDaysLeft = getNumberOfDaysBetweenDates(date, today);
+        const numberOfDaysLeft = getNumberOfDaysBetweenDates(today, birthday);
 
         const { showConfetti } = this.state;
         return (

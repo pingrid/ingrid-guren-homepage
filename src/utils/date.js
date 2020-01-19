@@ -1,6 +1,6 @@
 export const getNumberOfDaysBetweenDates = (firstDate, secondDate) => {
-    if (secondDate.getTime() < firstDate.getTime()) {
-        firstDate.setFullYear(firstDate.getFullYear() - 1);
+    if (firstDate.getTime() > secondDate.getTime()) {
+        secondDate.setFullYear(secondDate.getFullYear() + 1);
     }
-    return Math.ceil(Math.abs((secondDate.getTime() - firstDate.getTime()) / (24 * 60 * 60 * 1000)));
+    return Math.ceil(Math.abs(secondDate.getTime() - firstDate.getTime()) / (24 * 60 * 60 * 1000));
 };

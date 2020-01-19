@@ -10,7 +10,7 @@ describe('Number of days between dates', () => {
         secondDate.setMonth(7);
         secondDate.setDate(6);
         const numberOfDaysBetween = getNumberOfDaysBetweenDates(firstDate, secondDate);
-        expect(numberOfDaysBetween).to.equal(218);
+        expect(numberOfDaysBetween).to.equal(217);
     });
 
     it('when second date is before first date', () => {
