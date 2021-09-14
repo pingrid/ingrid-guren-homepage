@@ -1,13 +1,20 @@
-import React, {PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import Confetti from 'react-confetti';
-import {getNumberOfDaysBetweenDates} from "../utils/date";
+import { getNumberOfDaysBetweenDates } from '../utils/date';
 
 interface IProps {
-    color: string | 'blue';
+    color: string;
 }
 
 interface IState {
     showConfetti?: boolean;
+}
+
+function calculateNumberOfDatesLeft(today: Date) {
+    const birthday = new Date();
+    birthday.setMonth(6);
+    birthday.setDate(6);
+    return getNumberOfDaysBetweenDates(today, birthday);
 }
 
 class Home extends PureComponent<IProps, IState>{
@@ -17,14 +24,10 @@ class Home extends PureComponent<IProps, IState>{
             showConfetti: false
         }
     }
+
     render()  {
         const { color } = this.props;
-        const birthday = new Date();
-        birthday.setMonth(6);
-        birthday.setDate(6);
-        const today = new Date();
-        const numberOfDaysLeft = getNumberOfDaysBetweenDates(today, birthday);
-
+        const numberOfDaysLeft = calculateNumberOfDatesLeft(new Date());
         let content = (
             <div>
                 <p>... og jeg har bursdag om </p>
@@ -33,7 +36,7 @@ class Home extends PureComponent<IProps, IState>{
             </div>
         );
 
-        if (numberOfDaysLeft === 265 || numberOfDaysLeft === 0) {
+        if (numberOfDaysLeft === 365 || numberOfDaysLeft === 0) {
             content = (
                 <div>
                     <p>... OG JEG HAR BURSDAG</p>
@@ -58,8 +61,8 @@ class Home extends PureComponent<IProps, IState>{
                     </button>
                     {showConfetti && (
                         <Confetti
-                            width={window.outerWidth}
-                            height={window.outerHeight}
+                            width={window.outerWidth - 10 }
+                            height={window.outerHeight - 10}
                         />
                     )}
                 </div>
