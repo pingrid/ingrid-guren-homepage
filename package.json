@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/chai": "^4.2.21",
     "chai": "^4.3.4"
   }
 }
