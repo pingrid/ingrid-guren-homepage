@@ -5,7 +5,7 @@ import { Home } from './routes/Home';
 import * as serviceWorker from './serviceWorker';
 import { Header } from './components/header/Header';
 import './index.scss';
-import Profile from "./routes/Profile";
+import { Profile } from "./routes/Profile";
 
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
@@ -19,21 +19,19 @@ function getRandomColor() {
 const App = () => {
     const color = getRandomColor();
     return (
-        <div>
-            <Router>
-                <Header color={color} />
-                <div className="main-content">
-                    <Switch>
-                        <Route exact path="/">
-                            <Home color={color} />
-                        </Route>
-                        <Route path="/profile">
-                            <Profile />
-                        </Route>
-                    </Switch>
-                </div>
-            </Router>
-        </div>
+        <Router>
+            <Header color={color} />
+            <div className="main-content">
+                <Switch>
+                    <Route exact path="/">
+                        <Home color={color} />
+                    </Route>
+                    <Route path="/profile">
+                        <Profile />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     )
 };
 
