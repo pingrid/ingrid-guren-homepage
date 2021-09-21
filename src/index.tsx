@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { Header } from './components/header/Header';
 import './index.scss';
 import { Profile } from './routes/Profile';
+import { Plants } from './routes/Plants';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -28,6 +29,9 @@ const App = () => {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/plants">
+            <Plants />
           </Route>
         </Switch>
       </div>
