@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Confetti from "react-confetti";
-import { getNumberOfDaysBetweenDates } from "../utils/date";
+import React, { useState } from 'react';
+import Confetti from 'react-confetti';
+import { getNumberOfDaysBetweenDates } from '../utils/date';
 
 interface IProps {
   color: string;
@@ -24,7 +24,7 @@ export function Home(props: IProps) {
         {numberOfDaysLeft}
       </h2>
       <p>
-        dager{" "}
+        dager{' '}
         <span role="img" aria-label="emoji star struck">
           🤩
         </span>
@@ -37,7 +37,7 @@ export function Home(props: IProps) {
       <div>
         <p>... OG JEG HAR BURSDAG</p>
         <h2 className="birthday-number" style={{ color }}>
-          {" "}
+          {' '}
           I DAG
         </h2>
       </div>
@@ -47,7 +47,7 @@ export function Home(props: IProps) {
   return (
     <div className="home">
       <h1 className="header-font">
-        Hei!{" "}
+        Hei!{' '}
         <span role="img" aria-label="waving emoji">
           👋
         </span>
@@ -65,10 +65,7 @@ export function Home(props: IProps) {
           </span>
         </button>
         {showConfetti && (
-          <Confetti
-            width={window.outerWidth - 10}
-            height={window.outerHeight - 10}
-          />
+          <Confetti width={window.outerWidth - 10} height={window.outerHeight - 10} />
         )}
       </div>
     </div>

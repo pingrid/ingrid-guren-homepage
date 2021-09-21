@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement } from 'react';
 
-export function Profile() {
+export function Profile(): ReactElement {
   return (
     <div className="profile">
       <h1 className="header-font">
-        Denne siden er tom.{" "}
+        Denne siden er tom.
         <span role="img" aria-label="female emoji shrugging">
           🤷‍♀️
         </span>
