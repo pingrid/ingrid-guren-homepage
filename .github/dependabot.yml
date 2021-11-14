@@ -1,0 +1,18 @@
+version: 2
+registries:
+  npm-registry-registry-npmjs-org:
+    type: npm-registry
+    url: https://registry.npmjs.org
+
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "09:00"
+    open-pull-requests-limit: 10
+    target-branch: deps
+    registries:
+      - npm-registry-registry-npmjs-org
+    reviewers:
+      - pingrid
