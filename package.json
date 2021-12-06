@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.13.0",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^27.0.1",
@@ -61,7 +61,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-standard": "^5.0.0",
-    "prettier": "2.4.1"
+    "prettier": "2.5.1"
   },
   "volta": {
     "node": "14.17.6",
