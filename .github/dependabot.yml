@@ -4,3 +4,7 @@ updates:
     directory: '/'
     schedule: 
       interval: daily
+    allow:
+      - dependency-type: "production"
+    # Disable version updates for npm dependencies
+    open-pull-requests-limit: 0
