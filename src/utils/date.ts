@@ -1,4 +1,4 @@
-export function getNumberOfDaysBetweenDates(firstDate: Date, secondDate: Date): Number {
+export function getNumberOfDaysBetweenDates(firstDate: Date, secondDate: Date): number {
   if (firstDate.getTime() > secondDate.getTime()) {
     secondDate.setFullYear(secondDate.getFullYear() + 1);
   }

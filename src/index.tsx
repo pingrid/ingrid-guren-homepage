@@ -2,20 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './routes/Home';
-import * as serviceWorker from './serviceWorker';
 import { Header } from './components/header/Header';
-import './index.scss';
+import './index.css';
 import { Profile } from './routes/Profile';
-import { Plants } from './routes/Plants';
-
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
+import { getRandomColor } from './getRadomColor';
 
 const App = () => {
   const color = getRandomColor();
@@ -30,9 +20,6 @@ const App = () => {
           <Route path="/profile">
             <Profile />
           </Route>
-          <Route path="/plants">
-            <Plants />
-          </Route>
         </Switch>
       </div>
     </Router>
@@ -40,4 +27,3 @@ const App = () => {
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
-serviceWorker.unregister();
