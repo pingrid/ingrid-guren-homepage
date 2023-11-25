@@ -6,6 +6,7 @@ import { Header } from './components/header/Header';
 import './index.css';
 import { Profile } from './routes/Profile';
 import { getRandomColor } from './getRadomColor';
+import { Skryt } from './routes/Skryt';
 
 const App = () => {
   const color = getRandomColor();
@@ -19,6 +20,9 @@ const App = () => {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/skryt">
+            <Skryt color={color} />
           </Route>
         </Switch>
       </div>

@@ -1,0 +1,41 @@
+:root {
+    --text-color: rgba(43, 43, 43, 0.98);
+}
+
+.skryt-page {
+    color: var(--text-color);
+    margin: 2rem;
+}
+
+.skryt-page a {
+    color: var(--text-color);
+}
+.skryt-page a[visited] {
+    color: var(--text-color);
+}
+
+.skryt-page h1 {
+    margin-bottom: 1rem;
+}
+.skryteliste {
+    display: flex;
+    flex-direction: column;
+}
+
+.skryt-page h1 {
+    font-size: 3rem;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.fu-janteloven {
+    font-size: 1.2rem;
+    font-family: 'Bowlby One SC', cursive;
+}
+.skryteliste p {
+    margin: 0;
+}
+.skryteliste a,
+.skryteliste p {
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+}

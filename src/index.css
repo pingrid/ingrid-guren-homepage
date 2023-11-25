@@ -1,5 +1,6 @@
 @import "routes/home.css";
 @import "routes/profile.css";
+@import "routes/skryt.css";
 @import "components/header/header.css";
 
 body {
@@ -15,6 +16,10 @@ body {
 * {
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
+}
+
+html {
+
   margin-left: auto;
   margin-right: auto;
 }

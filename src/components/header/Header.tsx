@@ -76,6 +76,9 @@ export function Header(props: IProps): React.ReactElement {
           <img src={image} alt="Lite bilde av Ingrid" className="home-image" />
         </Link>
         <div className="menu-items">
+          <Link to ="/skryt">
+            Skryt
+          </Link>
           <a href="https://github.com/pingrid" target="_blank" rel="noopener noreferrer">
             Github
           </a>

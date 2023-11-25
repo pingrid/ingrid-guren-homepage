@@ -2,10 +2,10 @@
   margin: auto;
   display: flex;
   height: 100%;
+}
 
-  .header-font {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+.profile .header-font {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
