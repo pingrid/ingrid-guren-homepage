@@ -97,6 +97,9 @@ export function Header(props: IProps): React.ReactElement {
       </nav>
       <div className="mobile-menu">
         <Menu right styles={menuStyle}>
+          <Link to ="/skryt">
+            Skryt
+          </Link>
           <a
             className="menu-item"
             href="https://github.com/pingrid"
