@@ -5,7 +5,7 @@ export function Skryt({ color }: { color: string }) {
     <div className={'skryt-page'}>
       <h1 style={{ color }}>Workshops, talks and div</h1>
       <p className={'fu-janteloven'} style={{ color }}>
-        Yeyey, janteloven and all that shit. I'm still proud of past achievements{' '}
+        Velkommen til skrytelista{' '}
       </p>
       <div className={'skryteliste'}>
         <p><a href={`https://2023.javazone.no/program/75bcefdc-0f1c-45c7-a4e7-54c720f46c0f`}>
