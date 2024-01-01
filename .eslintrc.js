@@ -31,12 +31,6 @@ module.exports = {
     'spaced-comment': 'off',
     'no-console': 'warn',
     'no-undef': 'off', // breaks with typescript, but the typescript compiler checks this anyways
-    'no-restricted-imports': [
-      'error',
-      {
-        patterns: ['@nrk/core-icons/jsx/*', '@nrk/core-icons/core-icons.*'],
-      },
-    ],
   },
   settings: {
     polyfills: ['Promise', 'Array.from'],

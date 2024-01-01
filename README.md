@@ -1,4 +1,5 @@
-# Ingrid Guren
+#### Ingrid Guren
 
-Nettside og lekeplass for gøy
+Nettside og lekeplass for gøy.
+
 
