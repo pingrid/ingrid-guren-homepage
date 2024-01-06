@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home } from './routes/Home';
 import { Header } from './components/header/Header';
 import './index.css';
@@ -14,17 +14,11 @@ const App = () => {
     <Router>
       <Header color={color} />
       <div className="main-content">
-        <Switch>
-          <Route exact path="/">
-            <Home color={color} />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/skryt">
-            <Skryt color={color} />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/skryt" element={<Skryt color={color} />} />
+          <Route path="*" element={<Home color={color} />} />
+        </Routes>
       </div>
     </Router>
   );
