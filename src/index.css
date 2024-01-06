@@ -27,4 +27,5 @@ html {
 .main-content {
   max-width: 950px;
   height: 100vh;
+  margin: auto;
 }
